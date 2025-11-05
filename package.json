@@ -1,0 +1,41 @@
+{
+  "name": "quartz-sunset",
+  "version": "0.0.0",
+  "description": "Quartz Sunset",
+  "type": "module",
+  "packageManager": "pnpm@10.19.0",
+  "scripts": {
+    "loadAccounts": "node scripts/loadAccounts.ts",
+    "airdrop": "node scripts/airdrop.ts",
+    "getTestAccount": "hardhat run scripts/getTestAccount.ts",
+    "deploy": "hardhat run scripts/deploy.ts",
+    "compile": "hardhat compile",
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.0",
+    "@nomicfoundation/hardhat-viem": "^3.0.0",
+    "@nomicfoundation/hardhat-viem-assertions": "^3.0.2",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^24.9.1",
+    "chai": "^6.2.0",
+    "hardhat": "^3.0.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@polkadot/api": "^16.4.9",
+    "@polkadot/keyring": "^13.5.7",
+    "@polkadot/types": "^16.4.9",
+    "@polkadot/util": "^13.5.7",
+    "@polkadot/util-crypto": "^13.5.7",
+    "@unique-nft/contracts": "^0.1.0",
+    "@unique-nft/solidity-interfaces": "^1.0.1",
+    "@unique-nft/utils": "^0.3.22",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.15.0",
+    "viem": "^2.38.4"
+  }
+}
